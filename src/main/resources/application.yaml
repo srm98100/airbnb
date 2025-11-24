@@ -1,3 +1,6 @@
 spring:
   application:
     name: airbnb
+
+application:
+  port: 8090
