@@ -1,6 +1,26 @@
 spring:
   application:
     name: airbnb
+  datasource:
+    url: jdbc:postgresql://localhost:5432/airbnb
+    username: postgres
+    password: manager
+    driver-class-name: org.postgresql.Driver
 
-application:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  sql:
+    init:
+      mode:always
+
+
+
+
+
+server:
   port: 8090
